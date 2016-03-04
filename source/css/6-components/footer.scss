@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+  clear: both;
+  overflow: hidden;
+  background: palette(gray, dark);
+  color: palette(white);
+  line-height: 1.2;
+}
+.footer .lc, .footer .header, .footer [role=main] {
+  padding: 1rem 1rem 0;
+}
+.footer a {
+  color: palette(shade, lighter);
+}
+
+.nav-footer {
+  margin: -1rem -1rem 1rem;
+}
+.nav-footer li {
+  border-bottom: 1px solid palette(gray, dark);
+}
+@media all and (min-width: 46.8em) {
+  .nav-footer li {
+    border: 0;
+    float: left;
+  }
+}
+.nav-footer a {
+  display: block;
+  padding: 1rem;
+}
+
+@media all and (min-width: 46.8em) {
+  .copyright {
+    float: right;
+  }
+}

@@ -1,0 +1,46 @@
+
+/* Display Classes */
+@media all and (max-width: 46.8em) {
+  .hide-small {
+    display: none;
+  }
+}
+
+@media all and (min-width: 46.8em) and (max-width: 50em) {
+  .hide-med {
+    display: none;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .hide-large {
+    display: none;
+  }
+}
+
+@media all and (min-width: 66em) {
+  .hide-large-2 {
+    display: none;
+  }
+}
+
+.valid {
+  color: palette(green);
+}
+
+.error {
+  color: palette(red);
+}
+
+body {
+  background: palette(white);
+  font: 100%/1.5 $font-family-primary;
+  -webkit-text-size-adjust: 100%;
+  color: palette(gray, dark);
+}
+
+@media all and (max-width: 50em) {
+  html {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,78 @@
+form > div {
+  margin-bottom: 1rem;
+}
+
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid palette(shade, darker);
+  padding: 0.8rem 0.65rem;
+  background: palette(shade, lighter);
+}
+
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=number],
+textarea {
+  -webkit-appearance: none;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder {
+  color: palette(gray, lightest);
+}
+
+form button,
+form .button,
+input[type=submit] {
+  width: 100%;
+}
+
+form button,
+input[type=submit] {
+  background: palette(blue);
+  padding: 0.8rem 0.65rem;
+  border: 1px solid palette(blue, darker);
+  color: palette(white);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3em;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}

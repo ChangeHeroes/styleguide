@@ -1,0 +1,15 @@
+/* Clearfix */
+.cf, .l-two-col, [role=main] {
+  *zoom: 1;
+}
+
+.cf:before, .l-two-col:before, [role=main]:before, .cf:after, .l-two-col:after, [role=main]:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after, .l-two-col:after, [role=main]:after {
+  clear: both;
+}

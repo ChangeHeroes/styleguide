@@ -1,0 +1,89 @@
+// =============================================================================
+// GLOBAL COLOR VARIABLES
+// =============================================================================
+
+
+// Comments
+// -----------------------------------------------------------------------------
+//
+// Purpose: This is where all colors that are used in our style codebase should
+// be sourced from.
+//
+// Guide: New colors should be place in the palettes array while default colors
+// should only be referenced by the palettes.
+//
+// Button palettes based on:
+// http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+//
+// 1. Default Colors
+// 2. Palette Object
+// 3. Palette Function
+//
+// -----------------------------------------------------------------------------
+
+// 1. Default Colors
+// ================================================================================
+$_facebook: #3b5998;
+$_green: #4cb94c;
+$_blue: #337ab7;
+
+
+// 2. Building palettes object
+// ================================================================================
+$palettes: (
+  black: (
+    base: #000
+  ),
+  white: (
+    base: #fff,
+  ),
+  shade: (
+    base: #ddd,
+    darker: #ccc,
+    darkest: #bbb,
+    light: #dedede,
+    lighter: #f1f1f1,
+    lightest: #efefef,
+  ),
+  gray: (
+    base: #525252,
+    dark: #333,
+    darker: #222,
+    light: #666,
+    lighter: #999,
+    lightest: #aaa,
+  ),
+  blue: (
+    darker: darken($_blue, 5%),
+    base: $_blue,
+    light: lighten($_blue, 5%),
+  ),
+  green: (
+    base: $_green,
+    dark: darken($_green, 5%),
+    darker: darken($_green, 10%),
+    ligh: lighten($_green, 5%),
+    lighter: lighten($_green, 10%),
+  ),
+  red: (
+    base: #d9534f,
+    darker: #d9534f,
+    darkest: #d9534f,
+    lighter: #d9534f,
+    lightest: #d9534f,
+  ),
+  yellow: (
+    base: #f0ad4e,
+  ),
+  facebook: (
+    base: $_facebook,
+    dark: darken($_facebook, 10%),
+  )
+);
+
+
+// 3. Palette Function
+// ================================================================================
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

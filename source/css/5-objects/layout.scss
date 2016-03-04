@@ -1,0 +1,65 @@
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/* Layout Container */
+.lc,
+.layout-container,
+.header,
+[role=main] {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+
+.lc-small {
+  @extend .lc;
+  max-width: 35rem;
+}
+
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+  padding: 0.5rem 0.5rem 2rem;
+  overflow: hidden;
+}
+
+// Do we need this right now?
+// TODO: REMOVE this
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+/* Two Column Layout */
+@media all and (min-width: 50em) {
+  .l-two-col .l-main {
+    float: left;
+    width: 70%;
+    padding-right: 1rem;
+  }
+}
+@media all and (max-width: 50em) {
+  .l-two-col .l-sidebar {
+    clear: both;
+  }
+}
+@media all and (min-width: 50em) {
+  .l-two-col .l-sidebar {
+    float: left;
+    width: 30%;
+    padding: 0 0 0 1rem;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.section {
+  margin: 0 0 1rem;
+}
+
+.section-title {
+  margin-bottom: 0.5rem;
+}

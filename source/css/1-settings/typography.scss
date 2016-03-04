@@ -1,0 +1,59 @@
+// =============================================================================
+// Typography And Font Components
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+//
+// Purpose: Hold all general styling for font type and sizes in one place
+//
+// Guild: generally we should consider trying to use 'rem' values for font sizes
+//
+// 1. Font Family Types
+// 2. Font Size Variables
+// 3. Line Height Variables
+// 4. Body Defaults
+// 5. Paragraph Defaults (h1, h2, etc)
+// 6. List Defaults
+// 7. Form Defaults
+// 8. Text Decoration Defaults (<b><i>)
+// 9. Link Styles
+// 10. Media Variations
+//
+// NOTE:
+// A. Form typography is done here, but design is done in the form.scss file
+//
+// -----------------------------------------------------------------------------
+
+
+// 1. Font Family Types
+$font-family-primary:     "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-secondary:   Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+// 2. Font Sizes
+$font-size-base:          14px !default;
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+
+$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
+$font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
+$font-size-h4:            ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+
+
+// 3. Line Heights
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+$headings-font-family:    $font-family-primary !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;

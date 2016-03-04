@@ -1,0 +1,132 @@
+
+// INFO: input[type=submit] rule also extends the .button class in the button.scss file
+
+.field-container,
+.input-group {
+  margin-bottom: 1rem;
+}
+
+form {
+  // link buttons within a form field are designed to
+  .btn-link {
+    display: inline-block;
+    color: palette(gray);
+  }
+}
+
+
+// Horizontal Form Rules
+// =====================
+
+.form-horizontal {
+  @media all and (min-width: 40em) {
+    label {
+      width: 25%;
+      float: left;
+      text-align: right;
+      padding: 0 10px;
+      line-height: 37px;
+    }
+    input,
+    textarea,
+    select {
+      width: 75%;
+      float: left;
+      margin-bottom: 0.5rem;
+    }
+    input[type="submit"] {
+      margin-left: 25%;
+    }
+  }
+  @media all and (max-width: 40em) {
+    label,
+    input,
+    textarea {
+      clear: both;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+.inline-form fieldset,
+.inline-form .inline-container {
+  position: relative;
+}
+
+.inline-form input[type=submit],
+.inline-form button,
+.inline-form .btn {
+  font-size: 0.875em;
+  padding: 0.65rem 1.3rem;
+  // background: palette(gray);
+  // color: palette(white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+}
+
+.inline-form input[type=submit]:hover,
+.inline-form input[type=submit]:focus,
+.inline-form button:hover,
+.inline-form button:focus,
+.inline-form .btn:hover,
+.inline-form .btn:focus {
+  background: palette(gray);
+  color: palette(white);
+}
+
+.inline-search-results-form {
+  width: 100%;
+}
+
+@media all and (min-width: 46.8em) {
+  .inline-search-results-form {
+    width: 82%;
+  }
+}
+
+.inline-search-results-form fieldset,
+.inline-search-results-form .inline-container {
+  position: relative;
+}
+
+.inline-search-results-form input[type=submit],
+.inline-search-results-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+}
+
+/* Validation */
+.has-error {
+  border-color: palette(red);
+}
+
+.is-valid {
+  border-color: palette(green);
+}
+
+
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+/* Search Form */
+.search-field {
+  padding-right: 3em;
+}
+
+.inline-form .search-submit {
+  background: none;
+  padding: 0.78em 1em;
+  border: 0;
+  border-left: 1px solid palette(gray);
+  color: gray;
+}
