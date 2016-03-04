@@ -2,6 +2,12 @@
 
 Built using [Pattern Lab](http://patternlab.io/) to make all our styles all nice and consistent.
 
-Should probably add some more stuff like how to use thing thing in here.
+## Getting Started
 
-Yeah... I'll get to it
+ 1. Clone the repo
+ 2. `npm install`
+ 3. `gulp` or `gulp serve`
+
+## Making Changes
+
+`source` holds the good stuff you are probably interested in
